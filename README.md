@@ -4,11 +4,12 @@
 
 ```bash
 export JAVA_HOME=/Disk1/jdks/jdk-16.0.1/
-./mvnw clean install
+./mvnw clean compile assembly:single
 ```
 
 ## Running
 
 ```bash
-/Disk1/jdks/jdk-16.0.1/bin/java -cp target/decrypt-hash-0.0.1-SNAPSHOT.jar br.com.uan.decrypthash.App
+nohup /Disk1/jdks/jdk-16.0.1/bin/java -jar target/decrypt-hash-0.0.1-SNAPSHOT-jar-with-dependencies.jar > ./decrypt-hash.log &
+tail -f ./decrypt-hash.log
 ```
