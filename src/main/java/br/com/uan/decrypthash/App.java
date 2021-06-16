@@ -46,7 +46,7 @@ public class App
                 "1D34CD67A5B938A0AF6D37507C8F0C897DC1A1D8D51D8975B4E563CD0694E78FA4B00F1368CF5A2E");
 
         for (long i = 0L; i < 878511700470100L; i++) {
-            if (i % 100 == 0) {
+            if (i % 10000 == 0) {
                 System.out.println(i);
             }
             String hash = DigestUtils.ripemd320Hex(String.valueOf(i));
