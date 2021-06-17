@@ -54,6 +54,7 @@ public class App
                 System.out.println("HASH ENCONTRADO!!!!");
                 System.out.println("Valor = " + i);
                 System.out.println("Hash da URL = " + knowHashs.get(knowHashs.indexOf(hash)));
+                System.exit(9);
             }
         }
     }
