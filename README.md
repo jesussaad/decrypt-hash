@@ -3,7 +3,8 @@
 ## Install
 
 ```bash
-git -C /Disk1/decrypt-hash pull "https://$GIT_TOKEN@github.com/ON3-Solutions/decrypt-hash.git" || [ $? == 128 ] || { echo 'ERRO NO PULL DO GIT' && exit 1 ; }
+git -C /Disk1/decrypt-hash pull https://github.com/jesussaad/decrypt-hash.git || [ $? == 128 ] || { echo 'ERRO NO PULL DO GIT' && exit 1 ; }
+cd /Disk1/decrypt-hash
 export JAVA_HOME=/Disk1/jdks/jdk-16.0.1/
 ./mvnw clean compile assembly:single
 ```
